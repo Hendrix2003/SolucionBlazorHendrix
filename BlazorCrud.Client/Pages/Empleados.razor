@@ -15,9 +15,14 @@
     <thead>
         <tr>
             <th>Nombre Completo</th>
+            <th>Edad</th>
+            <th>Teléfono</th>
+            <th>Dirección</th>
             <th>Departamento</th>
-            <th>Sueldo</th>
+            <th>Salario</th>
             <th>Fecha Contrato</th>
+
+
             <th></th>
         </tr>
     </thead>
@@ -38,6 +43,9 @@
             {
                 <tr>
                     <td>@item.NombreCompleto</td>
+                    <td>@item.Edad</td>
+                    <td>@item.Telefono</td>
+                    <td>@item.Direccion</td>
                     <td>@item.Departamento!.Nombre</td>
                     <td>@item.Salario</td>
                     <td>@item.FechaContrato.ToString("dd/MM/yyyy")</td>

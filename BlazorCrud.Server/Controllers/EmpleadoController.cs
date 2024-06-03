@@ -33,6 +33,10 @@ namespace BlazorCrud.Server.Controllers
                     {
                         IdEmpleado = item.IdEmpleado,
                         NombreCompleto = item.NombreCompleto,
+                        Edad = item.Edad,
+                        Direccion = item.Dirección,
+                        Telefono = item.Teléfono,
+
                         IdDepartamento = item.IdDepartamento,
                         Salario = item.Salario,
                         FechaContrato = item.FechaContrato,
@@ -73,6 +77,9 @@ namespace BlazorCrud.Server.Controllers
                 {
                     EmpleadoDTO.IdEmpleado = dbEmpleado.IdEmpleado;
                     EmpleadoDTO.NombreCompleto = dbEmpleado.NombreCompleto;
+                    EmpleadoDTO.Edad = dbEmpleado.Edad;
+                    EmpleadoDTO.Direccion = dbEmpleado.Dirección;
+                    EmpleadoDTO.Telefono = dbEmpleado.Teléfono;
                     EmpleadoDTO.IdDepartamento = dbEmpleado.IdDepartamento;
                     EmpleadoDTO.Salario = dbEmpleado.Salario;
                     EmpleadoDTO.FechaContrato = dbEmpleado.FechaContrato;
@@ -112,6 +119,9 @@ namespace BlazorCrud.Server.Controllers
                     NombreCompleto = empleado.NombreCompleto,
                     IdDepartamento = empleado.IdDepartamento,
                     Salario = empleado.Salario,
+                    Edad = empleado.Edad,
+                    Dirección = empleado.Direccion!,
+                    Teléfono = empleado.Telefono!,
                     FechaContrato = empleado.FechaContrato,
                 };
 
@@ -160,6 +170,9 @@ namespace BlazorCrud.Server.Controllers
                     dbEmpleado.NombreCompleto = empleado.NombreCompleto;
                     dbEmpleado.IdDepartamento = empleado.IdDepartamento;
                     dbEmpleado.Salario = empleado.Salario;
+                    dbEmpleado.Edad = empleado.Edad;
+                    dbEmpleado.Dirección = empleado.Direccion!;  
+                    dbEmpleado.Teléfono = empleado.Telefono!;
                     dbEmpleado.FechaContrato = empleado.FechaContrato;
 
 

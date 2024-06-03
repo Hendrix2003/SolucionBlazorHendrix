@@ -19,6 +19,13 @@
         <InputText class="form-control" @bind-Value="empleado.NombreCompleto"></InputText>
         <ValidationMessage For="@(() => empleado.NombreCompleto)"></ValidationMessage>
     </div>
+
+    <div class="mb-3">
+        <label class="form-label">Edad</label>
+        <InputNumber class="form-control" @bind-Value="empleado.Edad"></InputNumber>
+        <ValidationMessage For="@(() => empleado.Edad)"></ValidationMessage>
+    </div>
+
     <div class="mb-3">
         <label class="form-label">Departamento</label>
         <InputSelect class="form-select" @bind-Value="empleado.IdDepartamento">
@@ -35,11 +42,26 @@
         <InputNumber class="form-control" @bind-Value="empleado.Salario"></InputNumber>
         <ValidationMessage For="@(() => empleado.Salario)"></ValidationMessage>
     </div>
+
+    <div class="mb-3">
+        <label class="form-label">Direccion</label>
+        <InputText class="form-control" @bind-Value="empleado.Direccion"></InputText>
+        <ValidationMessage For="@(() => empleado.Direccion)"></ValidationMessage>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Telefono</label>
+        <InputText class="form-control" @bind-Value="empleado.Telefono"></InputText>
+        <ValidationMessage For="@(() => empleado.Telefono)"></ValidationMessage>
+    </div>
+
+
+
     <div class="mb-3">
         <label class="form-label">Fecha Contrato</label>
         <InputDate class="form-control" @bind-Value="empleado.FechaContrato"></InputDate>
         <ValidationMessage For="@(() => empleado.FechaContrato)"></ValidationMessage>
-    </div>
+    </div>      
 
     <button class="btn btn-primary" type="submit">
         @btnTexto

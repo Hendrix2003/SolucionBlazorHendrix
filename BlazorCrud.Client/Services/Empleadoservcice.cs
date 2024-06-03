@@ -3,7 +3,7 @@ using System.Net.Http.Json;
 
 namespace BlazorCrud.Client.Services
 {
-    public class Empleadoservcice: IEmpleadoService
+    public class Empleadoservcice : IEmpleadoService
     {
 
         private readonly HttpClient _http;
@@ -36,7 +36,7 @@ namespace BlazorCrud.Client.Services
 
         public async Task<int> Guardar(EmpleadoDTO empleado)
         {
-            var result = await _http.PostAsJsonAsync($"api/Empleado/Guardar/",empleado);
+            var result = await _http.PostAsJsonAsync($"api/Empleado/Guardar/", empleado);
             var response = await result.Content.ReadFromJsonAsync<ResponseAPI<int>>();
 
             if (response!.EsCorrecto)
@@ -68,6 +68,6 @@ namespace BlazorCrud.Client.Services
                 throw new Exception(response.Mensaje);
         }
 
-     
+
     }
 }

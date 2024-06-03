@@ -11,6 +11,12 @@ public partial class Empleado
 
     public int IdDepartamento { get; set; }
 
+    public string Dirección { get; set; }
+
+    public string Teléfono { get; set; }
+
+    public int Edad { get; set; }
+
     public int Salario { get; set; }
 
     public DateTime FechaContrato { get; set; }
